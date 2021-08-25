@@ -41,8 +41,6 @@ class MyApp extends StatelessWidget {
         )
     );
 
-    print('1: ${list.length}');
-
     return MaterialApp(
       title: 'HSWM',
       initialRoute: '/',
