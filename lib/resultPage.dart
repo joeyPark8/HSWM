@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:how_same_with_me/question.dart';
 
 class ResultPage extends StatefulWidget {
   @override
@@ -8,6 +9,8 @@ class ResultPage extends StatefulWidget {
 }
 
 class _ResultPage extends State<ResultPage> {
+  List<Question> list = [];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
