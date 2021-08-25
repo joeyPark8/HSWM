@@ -26,11 +26,6 @@ class _QuestionPage extends State<QuestionPage> {
   _QuestionPage({Key? key, required this.list});
 
   @override
-  void initState() {
-    print('${list.length}');
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
