@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     list.add(
         Question(
-            content: '내가 좋아하는 것은?',
+            content: '자신이 좋아하는 것은?',
             answer: {
               1: 0,
               2: 50,
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
 
     list.add(
         Question(
-            content: '내가 좋아하는 것은?',
+            content: '자신이 좋아하는 것은?',
             answer: {
               1: 50,
               2: 0,
@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => AppHomePage(),
         '/question': (context) => QuestionPage(list: list),
-        '/result': (context) => ResultPage()
+        '/result': (context) => ResultPage(list: list)
       },
       theme: ThemeData(
         primarySwatch: Colors.blue,

@@ -23,6 +23,8 @@ class _QuestionPage extends State<QuestionPage> {
 
   var userAnswers = [];
 
+  var examples = <Widget>[];
+
   _QuestionPage({Key? key, required this.list});
 
   @override
@@ -39,7 +41,7 @@ class _QuestionPage extends State<QuestionPage> {
                 ),
               ),
               Column(
-                children: [
+                children: <Widget>[
                   ListTile(
                     title: Text(list[questionNum].examples[0]),
                     leading: Radio(
